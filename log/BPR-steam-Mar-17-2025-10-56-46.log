@@ -1,0 +1,79 @@
+Mon 17 Mar 2025 10:56:46 INFO ██Server: 	lilangdideMacBook-Pro.local
+Mon 17 Mar 2025 10:56:46 INFO ██Dir: 	/Users/lilangdi/MMRec
+
+Mon 17 Mar 2025 10:56:46 INFO 
+hyper_parameters=['seed']
+gpu_id=0
+valid_metric=Recall@10
+use_gpu=False
+data_path=./data/
+metrics=['Recall', 'NDCG']
+topk=[10, 20, 50]
+epochs=300
+train_batch_size=2048
+eval_batch_size=128
+learning_rate=0.001
+weight_decay=0.0001
+inter_file_name=steam.inter
+USER_ID_FIELD=userID
+ITEM_ID_FIELD=itemID
+TIME_FIELD=timestamp
+LABEL_FIELD=label
+field_separator=	
+inter_splitting_label=label
+seed=[48]
+device=cpu
+NEG_PREFIX=neg_
+embedding_size=64
+model=BPR
+dataset=steam
+valid_metric_bigger=True
+
+
+Mon 17 Mar 2025 10:56:47 INFO steam
+The number of users: 63659
+Average actions of users: 16.74027238882169
+The number of items: 4812
+Average actions of items: 221.46072319201994
+The number of inters: 1065669
+The sparsity of the dataset: 99.65211404013256%
+Mon 17 Mar 2025 10:56:47 INFO 
+====Training====
+steam
+The number of users: 63659
+Average actions of users: 9.716599381077302
+The number of items: 4554
+Average actions of items: 135.8254281949934
+The number of inters: 618549
+The sparsity of the dataset: 99.78663593805275%
+Mon 17 Mar 2025 10:56:47 INFO 
+====Validation====
+steam
+The number of users: 57853
+Average actions of users: 3.740117193576824
+The number of items: 3885
+Average actions of items: 55.69549549549549
+The number of inters: 216377
+The sparsity of the dataset: 99.90372928716663%
+Mon 17 Mar 2025 10:56:47 INFO 
+====Testing====
+steam
+The number of users: 53317
+Average actions of users: 4.327756625466549
+The number of items: 3862
+Average actions of items: 59.74702226825479
+The number of inters: 230743
+The sparsity of the dataset: 99.88794001487658%
+Mon 17 Mar 2025 10:56:51 INFO 
+
+=================================
+
+
+Mon 17 Mar 2025 10:56:51 INFO =========1/1: Parameters:['seed']=(48,)=======
+Mon 17 Mar 2025 10:56:51 INFO BPR(
+  (user_embedding): Embedding(87624, 64)
+  (item_embedding): Embedding(22244, 64)
+  (loss): BPRLoss()
+  (reg_loss): EmbLoss()
+)
+Trainable parameters: 7031552

@@ -1,0 +1,41 @@
+# Common Features - 确保这些字段都已定义
+USER_ID_FIELD: userID
+ITEM_ID_FIELD: itemID
+TIME_FIELD: timestamp
+LABEL_FIELD: label  # 添加这一行
+
+filter_out_cod_start_users: True
+
+inter_file_name: 'steam.inter'
+
+# name of features
+# 如果您没有准备多模态特征文件，可以先注释掉这些行
+vision_feature_file: 'image_feat.npy'
+text_feature_file: 'text_feat.npy'
+
+field_separator: "\t"
+
+alpha1: [1.0]
+alpha2: [0.1, 0.2, 0.3]
+beta: [3]
+
+hyper_parameters: ["alpha1", "alpha2", "beta"]
+
+embedding_size: 64
+weight_decay: 0.0
+req_training: True
+#embedding_size: 3780
+
+# training settings
+epochs: 1000
+stopping_step: 20
+train_batch_size: 2048
+learner: adam
+learning_rate: 0.001
+learning_rate_scheduler: [1.0, 50]
+eval_step: 1
+
+training_neg_sample_num: 1
+use_neg_sampling: True
+use_full_sampling: False
+NEG_PREFIX: neg__

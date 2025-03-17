@@ -1,0 +1,5 @@
+# 您的现有 .gitignore 内容
+data/*
+data/steam/image_feat.npy
+data/steam/text_feat.npy
+preprocessing/index/*

@@ -1,0 +1,15 @@
+Mon 17 Mar 2025 10:02:58 INFO ██Server: 	lilangdideMacBook-Pro.local
+Mon 17 Mar 2025 10:02:58 INFO ██Dir: 	/Users/lilangdi/MMRec
+
+Mon 17 Mar 2025 10:02:58 INFO 
+hyper_parameters=['seed']
+gpu_id=0
+valid_metric=Recall@10
+use_gpu=False
+data_path=./data/
+dataset=steam
+model=MMGCN
+valid_metric_bigger=True
+device=cpu
+
+
