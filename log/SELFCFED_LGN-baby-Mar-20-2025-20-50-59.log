@@ -1,0 +1,24 @@
+Thu 20 Mar 2025 20:50:59 INFO ██Server: 	lilangdideMacBook-Pro.local
+Thu 20 Mar 2025 20:50:59 INFO ██Dir: 	/Users/lilangdi/MMRec
+
+Thu 20 Mar 2025 20:50:59 INFO 
+hyper_parameters=['n_layers', 'dropout', 'reg_weight', 'seed']
+embedding_size=64
+n_layers=[1, 2]
+dropout=[0.1, 0.2, 0.5]
+reg_weight=['1e-01', '1e-02', '1e-03', '1e-04', '1e-05', 0.0]
+use_neg_sampling=False
+inter_file_name=steam.inter
+USER_ID_FIELD=userID
+ITEM_ID_FIELD=itemID
+TIME_FIELD=timestamp
+field_separator=	
+inter_splitting_label=label
+use_gpu=False
+valid_metric=Recall@10
+model=SELFCFED_LGN
+dataset=baby
+valid_metric_bigger=True
+device=cpu
+
+

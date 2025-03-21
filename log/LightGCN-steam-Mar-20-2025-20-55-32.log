@@ -1,0 +1,31 @@
+Thu 20 Mar 2025 20:55:32 INFO ██Server: 	lilangdideMacBook-Pro.local
+Thu 20 Mar 2025 20:55:32 INFO ██Dir: 	/Users/lilangdi/MMRec
+
+Thu 20 Mar 2025 20:55:32 INFO 
+hyper_parameters=['n_layers', 'reg_weight', 'seed']
+embedding_size=64
+is_multimodal_model=False
+n_layers=[1, 2, 3, 4]
+reg_weight=['1e-02', '1e-03', '1e-04', '1e-05', '1e-06']
+inter_file_name=steam.inter
+USER_ID_FIELD=userID
+ITEM_ID_FIELD=itemID
+TIME_FIELD=timestamp
+field_separator=	
+inter_splitting_label=label
+use_gpu=False
+data_path=data/
+valid_metric=Recall@10
+model=LightGCN
+dataset=steam
+valid_metric_bigger=True
+device=cpu
+
+
+Thu 20 Mar 2025 20:55:33 INFO steam
+The number of users: 63659
+Average actions of users: 16.74027238882169
+The number of items: 4812
+Average actions of items: 221.46072319201994
+The number of inters: 1065669
+The sparsity of the dataset: 99.65211404013256%
